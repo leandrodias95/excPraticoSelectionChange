@@ -1,0 +1,17 @@
+<p>real-estate works!</p>
+<mat-card>
+<mat-card-content>
+  <mat-form-field>
+    <mat-label>Tipo de Locação</mat-label>
+    <mat-select matNativeControl required [disabled]="disabled" (selectionChange)="selectionChange($event)">
+    <mat-option value="house">Casa</mat-option>
+    <mat-option value="apartament">Apartamento</mat-option>
+    <mat-option value="beach-house">Casa de praia</mat-option>
+    <mat-option value="party-house">Casa de festa</mat-option>
+  </mat-select>
+ </mat-form-field>
+</mat-card-content>
+<mat-card-actions>
+  <p>Opção selecionada {{selectedOption}} esse imóvel {{message}}</p>
+</mat-card-actions>
+</mat-card>
